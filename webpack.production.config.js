@@ -9,14 +9,14 @@ var WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 // local css modules
 loaders.push({
 	test: /[\/\\]src[\/\\].*\.css/,
-	exclude: /(node_modules|bower_components|public)/,
+	exclude: /(node_modules|bower_components|build)/,
 	loader: ExtractTextPlugin.extract('style', 'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]')
 });
 
 // local scss modules
 loaders.push({
 	test: /[\/\\]src[\/\\].*\.scss/,
-	exclude: /(node_modules|bower_components|public)/,
+	exclude: /(node_modules|bower_components|build)/,
 	loader: ExtractTextPlugin.extract('style', 'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]', 'sass')
 });
 // global css files
@@ -30,7 +30,7 @@ module.exports = {
 		'./src/index.js'
 	],
 	output: {
-		path: path.join(__dirname, 'public'),
+		path: path.join(__dirname, 'build'),
 		filename: '[chunkhash].js'
 	},
 	resolve: {

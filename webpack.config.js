@@ -18,7 +18,7 @@ loaders.push({
 // local scss modules
 loaders.push({
 	test: /[\/\\]src[\/\\].*\.scss/,
-	exclude: /(node_modules|bower_components|public)/,
+	exclude: /(node_modules|bower_components|build)/,
 	loaders: [
 		'style?sourceMap',
 		'css?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
@@ -29,7 +29,7 @@ loaders.push({
 // local css modules
 loaders.push({
 	test: /[\/\\]src[\/\\].*\.css/,
-	exclude: /(node_modules|bower_components|public)/,
+	exclude: /(node_modules|bower_components|build)/,
 	loaders: [
 		'style?sourceMap',
 		'css?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]'
@@ -44,7 +44,7 @@ module.exports = {
 	],
 	devtool: process.env.WEBPACK_DEVTOOL || 'cheap-module-source-map',
 	output: {
-		path: path.join(__dirname, 'public'),
+		path: path.join(__dirname, 'build'),
 		filename: 'bundle.js'
 	},
 	resolve: {
@@ -55,7 +55,7 @@ module.exports = {
 		loaders
 	},
 	devServer: {
-		contentBase: "./public",
+		contentBase: "./build",
 		// do not print bundle build stats
 		noInfo: true,
 		// enable HMR
