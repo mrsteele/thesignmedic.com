@@ -7,6 +7,8 @@ export default class Jumptron extends React.Component {
         <div className='container'>
           <h1>Welcome</h1>
           <p>This is the sample site.</p>
+          <p><a className='btn'>Link</a></p>
+          <p><button className='btn'>Button</button></p>
         </div>
       </div>
     )

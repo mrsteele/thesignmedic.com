@@ -1,8 +1,11 @@
+@import '~normalize.css/normalize';
+@import 'variables';
+
 :global {
-	@import '~normalize.css/normalize';
 	@import 'utils';
 	@import 'base';
 
 	// sections
+	@import 'containers/navigation';
 	@import 'containers/jumbotron';
 }
