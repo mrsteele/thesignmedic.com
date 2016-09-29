@@ -2,8 +2,8 @@
 @import 'variables';
 
 :global {
+	@import 'bases/index';
 	@import 'utils';
-	@import 'base';
 
 	// sections
 	@import 'containers/navigation';

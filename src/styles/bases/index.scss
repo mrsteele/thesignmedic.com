@@ -1,0 +1,12 @@
+@import 'bases/buttons';
+@import 'bases/typography';
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  // for the sticky nav
+  padding-top: 38px;
+}
