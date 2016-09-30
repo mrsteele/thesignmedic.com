@@ -1,4 +1,6 @@
 .blurbs {
+  background-color: $brand-primary;
+
   ul {
     padding: 0;
     margin: 0;
@@ -12,6 +14,10 @@
     display: flex;
     box-sizing: border-box;
     float: left;
+
+    &:last-child {
+      float: none;
+    }
 
     .details {
       margin-left: 1.5em;

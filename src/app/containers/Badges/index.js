@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import Blurb from './Blurb'
+import Badge from './Badge'
 
-export default class Blurbs extends Component {
-  getBlurbs () {
+export default class Badges extends Component {
+  getBadges () {
     return [{
       icon: 'coffee',
       title: 'title',
@@ -19,12 +19,12 @@ export default class Blurbs extends Component {
   }
 
   render () {
-    const children = this.getBlurbs().map(blurb => {
-      return (<Blurb data={blurb} key={blurb.icon} />)
+    const children = this.getBadges().map(badge => {
+      return (<Badge data={badge} key={badge.icon} />)
     })
 
     return (
-      <section className='blurbs'>
+      <section className='badges'>
         <div className='container'>
           <ul>
             {children}
