@@ -2,10 +2,6 @@
   ul {
     padding: 0;
     margin: 0;
-
-    @media #{$media-desktop} {
-      display: flex;
-    }
   }
 
   .blurb {
@@ -14,6 +10,8 @@
     padding: 10px;
     margin-bottom: 1em;
     display: flex;
+    box-sizing: border-box;
+    float: left;
 
     .details {
       margin-left: 1.5em;
@@ -26,6 +24,10 @@
       p {
         margin: 0;
       }
+    }
+
+    @media #{$media-desktop} {
+      width: 50%;
     }
   }
 }
