@@ -1,4 +1,5 @@
 @import '~normalize.css/normalize';
+@import 'fonts';
 @import 'variables';
 
 :global {
@@ -8,4 +9,5 @@
 	// sections
 	@import 'containers/navigation';
 	@import 'containers/jumbotron';
+	@import 'containers/blurbs';
 }

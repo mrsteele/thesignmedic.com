@@ -1,6 +1,48 @@
-$brand-primary: blue;
-$brand-secondary: orange;
+// brand colors
+$brand-primary: #DD744B;
+$brand-secondary: #90c0cd;
+$brand-success: #8fa855;
+$brand-danger: #a23339;
+$brand-mute: #ebe8e3;
 
-$dark-gray: #333;
-$gray: #999;
-$light-gray: #ccc;
+// brand mono
+$brand-white: #fff;
+$brand-black: #000;
+
+$brand-white-opaque: rgba(255, 255, 255, 0.5);
+$brand-black-opaque: rgba(0, 0, 0, 0.5);
+
+$brand-gray: #999;
+$brand-light-gray: lighten($brand-gray, 10%);
+$brand-dark-gray: darken($brand-gray, 10%);
+
+$brand-light: #ccc;
+$brand-lighter: #ddd;
+$brand-lightest: #eee;
+
+$brand-dark: #666;
+$brand-darker: #444;
+$brand-darkery: #333;
+$brand-darkest: #222;
+
+// social
+$social-facebook: #3b5998;
+$social-twitter: #4099FF;
+$social-pinterest: #cb2027;
+$social-email: $brand-darkery;
+
+// fonts
+$font-primary: Raleway, Helvetica, Verdanda, Arial, sans-serif;
+$font-secondary-font: Times, "Times New Roman" serif;
+
+@mixin font-secondary {
+  font-family: $font-secondary-font;
+  font-weight: 300;
+}
+
+// media queries
+$brand-desktop: 720px;
+$media-desktop: "(min-width: 720px)";
+
+// DON'T USE THIS PLEASE!!! (desktop first!)
+$media-mobile: "(max-width: 720px)";

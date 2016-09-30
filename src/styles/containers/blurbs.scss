@@ -1,0 +1,31 @@
+.blurbs {
+  ul {
+    padding: 0;
+    margin: 0;
+
+    @media #{$media-desktop} {
+      display: flex;
+    }
+  }
+
+  .blurb {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1em;
+    display: flex;
+
+    .details {
+      margin-left: 1.5em;
+      width: 100%;
+
+      .title {
+        margin: 0 0 0.5em;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+}

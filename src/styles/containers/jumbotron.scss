@@ -1,4 +1,9 @@
 .jumbotron {
   overflow: auto;
   background-color: #ccccff;
+  padding: 10px;
+
+  @media #{$media-desktop} {
+    padding: 0;
+  }
 }
