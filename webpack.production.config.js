@@ -60,7 +60,7 @@ module.exports = {
 		}),
 		new HtmlWebpackPlugin({
 			template: './src/template.html',
-			title: 'Webpack App'
+			title: 'The Sign Medic - Your Image is Our Business'
 		}),
 		new webpack.optimize.DedupePlugin()
 	]

@@ -1,5 +1,4 @@
 import React, { PropTypes, Component } from 'react'
-import FontAwesome from 'react-fontawesome'
 
 export default class Badge extends Component {
   render () {
@@ -7,7 +6,8 @@ export default class Badge extends Component {
 
     return (
       <li className='badge'>
-        <FontAwesome name={icon} size='5x' />
+        <div className='bgimage' style={{backgroundImage: `url(${icon})`}} />
+        <span>&nbsp;</span>
         <div className='details'>
           <h2 className='title'>{title}</h2>
           <p>{desc}</p>
