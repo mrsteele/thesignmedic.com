@@ -3,6 +3,7 @@ import Jumbotron from './containers/Jumbotron/index'
 import Navigation from './containers/Navigation/index'
 import Blurbs from './containers/Blurbs/index'
 import Badges from './containers/Badges/index'
+import Footer from './containers/Footer/index'
 
 export default class App extends Component {
   render () {
@@ -12,6 +13,7 @@ export default class App extends Component {
         <Jumbotron />
         <Badges />
         <Blurbs />
+        <Footer />
       </main>
     )
   }

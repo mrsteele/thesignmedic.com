@@ -1,8 +1,8 @@
 @import '~normalize.css/normalize';
 @import 'fonts';
-@import 'variables';
 
 :global {
+	@import 'variables';
 	@import 'bases/index';
 	@import 'utils';
 
@@ -11,4 +11,5 @@
 	@import 'containers/jumbotron';
 	@import 'containers/blurbs';
 	@import 'containers/badges';
+	@import 'containers/footer';
 }

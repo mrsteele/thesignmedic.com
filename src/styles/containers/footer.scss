@@ -1,0 +1,43 @@
+footer.footer {
+  padding: 10px;
+  padding-top: 25px;
+  background-color: $brand-darker;
+  color: $brand-gray;
+  font-size: 0.8em;
+
+  a {
+    color: inherit;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    li {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    @media #{$media-desktop} {
+      display: flex;
+
+      li {
+        &:first-child {
+          text-align: left;
+        }
+
+        &:last-child {
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  padding-bottom: 25vh;
+}

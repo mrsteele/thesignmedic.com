@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
+import FontAwesome from 'react-fontawesome'
 
 export default class Navigation extends Component {
   render () {
     return (
       <nav className='navigation'>
         <div className='container'>
-          <h1>Logo</h1>
+          <h1><FontAwesome name='heartbeat' size='2x' /></h1>
           <ul>
             <li>
               <a>Link 1</a>

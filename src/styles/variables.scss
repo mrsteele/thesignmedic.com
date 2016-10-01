@@ -46,3 +46,15 @@ $media-desktop: "(min-width: 720px)";
 
 // DON'T USE THIS PLEASE!!! (desktop first!)
 $media-mobile: "(max-width: 720px)";
+
+@media #{$media-mobile} {
+  .no-mobile, .only-desktop {
+    display: none !important;
+  }
+}
+
+@media #{$media-desktop} {
+  .no-desktop, .only-mobile {
+    display: none !important;
+  }
+}
