@@ -12,12 +12,38 @@ nav.navigation {
   h1 {
     font-size: 1em;
     margin: 0;
+    width: 100%;
   }
 
   ul {
     display: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    padding-top: 0.5em;
+
     li {
       display: inline-block;
+    }
+  }
+
+  @media #{$media-desktop} {
+
+    .container {
+      display: flex;
+    }
+
+    h1 {
+      text-align: left;
+    }
+
+    ul {
+      display: block;
+    }
+
+    li {
+      margin: 0 10px;
     }
   }
 }
