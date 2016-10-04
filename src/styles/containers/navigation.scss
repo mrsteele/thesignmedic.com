@@ -25,6 +25,29 @@ nav.navigation {
 
     li {
       display: inline-block;
+
+      a {
+        background: none;
+        box-shadow: none;
+
+        &:hover {
+          box-shadow: none;
+          background: none;
+          text-decoration: underline;
+        }
+      }
+
+      &.active {
+        a {
+          color: $brand-white;
+          background-color: $brand-primary;
+
+          &:hover {
+            text-decoration: none;
+            background-color: darken($brand-primary, 10%);
+          }
+        }
+      }
     }
   }
 

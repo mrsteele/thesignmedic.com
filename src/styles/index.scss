@@ -1,7 +1,13 @@
-@import '~normalize.css/normalize';
-@import 'fonts';
+
 
 :global {
+
+	// libs
+	@import '~normalize.css/normalize';
+	@import '~react-dropdown/style';
+
+	// bases
+	@import 'fonts';
 	@import 'variables';
 	@import 'bases/index';
 	@import 'utils';
@@ -12,4 +18,7 @@
 	@import 'containers/blurbs';
 	@import 'containers/badges';
 	@import 'containers/footer';
+
+	// utils
+	@import 'utils/modal';
 }

@@ -5,7 +5,7 @@ export default class Badge extends Component {
     const { icon, title, desc } = this.props.data
 
     return (
-      <li className='badge'>
+      <li className='badge' tabIndex='0'>
         <div className='bgimage' style={{backgroundImage: `url(${icon})`}} />
         <span>&nbsp;</span>
         <div className='details'>
