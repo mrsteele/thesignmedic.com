@@ -1,4 +1,5 @@
 .jumbotron {
   overflow: auto;
-  background-color: #ccccff;
+  background-color: $brand-primary;
+  color: $brand-lightest;
 }
