@@ -7,8 +7,8 @@ export default class Jumptron extends Component {
         <div className='container text-right'>
           <h1>Welcome</h1>
           <p>This is the sample site.</p>
-          <p><a className='btn'>Link</a></p>
-          <p><button className='btn'>Button</button></p>
+          <p><a className='btn' tabIndex='0'>Link</a></p>
+          <p><button className='btn' tabIndex='0'>Button</button></p>
         </div>
       </section>
     )

@@ -32,7 +32,7 @@ nav.navigation {
         box-shadow: none;
         color: $brand-lightest;
 
-        &:hover {
+        &:hover, &:active, &:focus {
           box-shadow: none;
           background: none;
           text-decoration: underline;
