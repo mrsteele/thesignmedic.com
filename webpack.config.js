@@ -71,6 +71,7 @@ module.exports = {
 		new webpack.NoErrorsPlugin(),
 		new webpack.HotModuleReplacementPlugin(),
 		new HtmlWebpackPlugin({
+			title: 'The Sign Medic - Your Image is Our Business',
 			template: './src/template.html'
 		}),
 	]

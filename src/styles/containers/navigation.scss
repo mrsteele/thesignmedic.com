@@ -28,6 +28,7 @@ nav.navigation {
       display: inline-block;
 
       a {
+        cursor: pointer;
         background: none;
         box-shadow: none;
         color: $brand-lightest;
@@ -36,17 +37,9 @@ nav.navigation {
           box-shadow: none;
           background: none;
           text-decoration: underline;
-        }
-      }
 
-      &.active {
-        a {
-          background-color: $brand-primary;
-          color: $brand-darker;
-
-          &:hover {
+          &.btn {
             text-decoration: none;
-            background-color: darken($brand-primary, 10%);
           }
         }
       }

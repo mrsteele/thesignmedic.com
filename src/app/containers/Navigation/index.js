@@ -34,19 +34,19 @@ export default class Navigation extends Component {
     return (
       <nav className='navigation'>
         <Modal showing={modal} close={this.closeModal}>
-          <ContactForm />
+          <ContactForm onSubmit={this.closeModal} />
         </Modal>
         <div className='container'>
           <h1><FontAwesome name='heartbeat' size='2x' /></h1>
           <ul>
             <li>
-              <a className='btn' tabIndex='0'>Link 1</a>
+              <a tabIndex='0'>Link 1</a>
             </li>
             <li>
-              <a className='btn' tabIndex='0'>Link 2</a>
+              <a tabIndex='0'>Link 2</a>
             </li>
-            <li className='active'>
-              <a className='btn' tabIndex='0' onClick={this.openModal}>Link 3</a>
+            <li>
+              <a className='btn btn-primary' tabIndex='0' onClick={this.openModal}>Link 3</a>
             </li>
           </ul>
         </div>
