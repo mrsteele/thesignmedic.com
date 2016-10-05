@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import FontAwesome from 'react-fontawesome'
 import ContactForm from '../ContactForm/index'
 import Modal from '../../utils/Modal'
+import Logo from '../../../res/logo.png'
+import Name from '../../../res/name.png'
 
 export default class Navigation extends Component {
 
@@ -37,7 +38,10 @@ export default class Navigation extends Component {
           <ContactForm onSubmit={this.closeModal} />
         </Modal>
         <div className='container'>
-          <h1><FontAwesome name='heartbeat' size='2x' /></h1>
+          <h1>
+            <img src={Logo} />
+            <img src={Name} />
+            </h1>
           <ul>
             <li>
               <a tabIndex='0'>Link 1</a>
