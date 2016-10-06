@@ -50,7 +50,7 @@ export default class Navigation extends Component {
               <a tabIndex='0'>Link 2</a>
             </li>
             <li>
-              <a className='btn btn-primary' tabIndex='0' onClick={this.openModal}>Link 3</a>
+              <a className='btn btn-success' tabIndex='0' onClick={this.openModal}>Contact Us</a>
             </li>
           </ul>
         </div>
