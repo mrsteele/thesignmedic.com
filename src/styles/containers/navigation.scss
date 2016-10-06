@@ -16,6 +16,7 @@ nav.navigation {
 
     img {
       height: 1em;
+      vertical-align: middle;
     }
   }
 
@@ -47,6 +48,13 @@ nav.navigation {
         }
       }
     }
+  }
+
+  .mobile-contact {
+    font-size: initial;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 25px;
   }
 
   @media #{$media-desktop} {

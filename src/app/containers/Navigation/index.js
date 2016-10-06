@@ -29,6 +29,10 @@ export default class Navigation extends Component {
     })
   }
 
+  getContactLink () {
+    return (<a className='btn btn-success' tabIndex='0' onClick={this.openModal}>Contact Us</a>)
+  }
+
   render () {
     const { modal } = this.state
 
@@ -41,7 +45,10 @@ export default class Navigation extends Component {
           <h1>
             <img src={Logo} />
             <img src={Name} />
-            </h1>
+            <div className='only-mobile mobile-contact'>
+              {this.getContactLink()}
+            </div>
+          </h1>
           <ul>
             <li>
               <a tabIndex='0'>Link 1</a>
@@ -50,7 +57,7 @@ export default class Navigation extends Component {
               <a tabIndex='0'>Link 2</a>
             </li>
             <li>
-              <a className='btn btn-success' tabIndex='0' onClick={this.openModal}>Contact Us</a>
+              {this.getContactLink()}
             </li>
           </ul>
         </div>
