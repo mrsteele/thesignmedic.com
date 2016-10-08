@@ -30,13 +30,27 @@ export default class ContactForm extends Component {
 
   checkValidity () {
     const { preference } = this.state
+    const { phone, email } = this.refs
     if (!this.refs.form.checkValidity() || !preference) {
       return 'Please fill in all required fields'
-    } else if (preference === 'Email') {
+    } else if (preference === 'Email' && email.length === 0) {
       return 'Email is invalid'
-    } else if (preference === 'Phone' && this.refs.phone.getNumber().length !== 71) {
+    } else if (preference === 'Phone' && phone.getNumber().length !== 17) {
       return 'Please supply a full phone number e.g. (111) 222-3333'
     }
+  }
+
+  openEmail () {
+    const { preference } = this.state
+    const { name, phone, email, body } = this.refs
+
+    const contactDefail = (preference === 'Email') ? email.value : phone.getNumber()
+    const to = encodeURIComponent('matt@matt.com')
+    const subject = encodeURIComponent('Email from thesignmedic.com')
+    const line1 = encodeURIComponent(body.value)
+    const line2 = encodeURIComponent(`${name.value} \r\n ${contactDefail}`)
+    const newParagraph = encodeURIComponent('\r\n\r\n')
+    window.location.href = `mailto:${to}?subject=${subject}&body=${line1 + newParagraph + line2}`
   }
 
   submit (e) {
@@ -51,10 +65,11 @@ export default class ContactForm extends Component {
       return
     }
 
+    this.openEmail()
+
     const { onSubmit } = this.props
     if (onSubmit) {
-      // actually email everything
-      // onSubmit()
+      onSubmit()
     }
   }
 
@@ -64,7 +79,7 @@ export default class ContactForm extends Component {
     let Pref = ''
     if (preference) {
       Pref = (preference === 'Email')
-        ? (<input onChange={this.removeError} type='email' required />)
+        ? (<input onChange={this.removeError} type='email' ref='email' required />)
         : (<ReactPhone onChange={this.removeError} ref='phone' defaultCountry={'us'} onlyCountries={['us']} />)
     }
 
@@ -75,7 +90,7 @@ export default class ContactForm extends Component {
         {Err}
         <label>
           Name
-          <input onChange={this.removeError} required />
+          <input ref='name' onChange={this.removeError} required />
         </label>
         <label>
           Preferred method of contact
@@ -87,7 +102,7 @@ export default class ContactForm extends Component {
         </label>
         <label>
           Message
-          <textarea onChange={this.removeError} placeholder='Message goes here...' required />
+          <textarea ref='body' onChange={this.removeError} placeholder='Message goes here...' required />
         </label>
 
         <p className='text-center'>
