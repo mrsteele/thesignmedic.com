@@ -12,12 +12,11 @@
 
     .text {
       position: absolute;
-      top: 0;
-      right: 0;
-      transition: all 0.3s ease-out;
+      top: 20px;
+      right: 20px;
+      transition: opacity 0.3s ease-out, margin 0.3s ease-out;
       transition-delay: 1s;
       opacity: 0;
-      padding: 20px;
       margin-top: -20px;
       text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
     }
@@ -32,7 +31,7 @@
     }
 
     .description {
-      top: 60px;
+      top: 80px;
       font-size: 1.5em;
       max-width: 400px;
       transition-delay: 1.25s;
@@ -47,5 +46,29 @@
         font-size: 2em;
       }
     }
+  }
+
+  .slick-list {
+    z-index: 1;
+  }
+
+  .slick-next, .slick-prev {
+    transition: all 0.2s ease-out;
+
+    &:before {
+      font-size: 40px;
+    }
+  }
+
+  .slick-next {
+    right: -4px;
+
+    &:hover {
+      right: -15px;
+    }
+  }
+
+  .slick-prev:hover {
+    left: -35px;
   }
 }

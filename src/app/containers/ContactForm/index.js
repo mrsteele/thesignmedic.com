@@ -45,7 +45,7 @@ export default class ContactForm extends Component {
     const { name, phone, email, body } = this.refs
 
     const contactDefail = (preference === 'Email') ? email.value : phone.getNumber()
-    const to = encodeURIComponent('matt@matt.com')
+    const to = encodeURIComponent('signmedicva@gmail.com')
     const subject = encodeURIComponent('Email from thesignmedic.com')
     const line1 = encodeURIComponent(body.value)
     const line2 = encodeURIComponent(`${name.value} \r\n ${contactDefail}`)

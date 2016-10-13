@@ -2,6 +2,14 @@ import React, { Component } from 'react'
 import Slider from 'react-slick'
 
 export default class Jumptron extends Component {
+  constructor (props) {
+    super(props)
+
+    setTimeout(() => {
+      window.dispatchEvent(new window.Event('resize'))
+    }, 500)
+  }
+
   getRandomImg (offset = 0) {
     const t = Date.now() + offset
     return `https://unsplash.it/1200/500?random&c=${t}`

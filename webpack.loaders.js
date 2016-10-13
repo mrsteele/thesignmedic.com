@@ -47,5 +47,10 @@ module.exports = [
 		test: /\.png/,
 		exclude: /(node_modules|bower_components)/,
 		loader: "url-loader?limit=10000&mimetype=image/png"
+	},
+	{
+		test: /\.ico/,
+		exclude: /(node_modules|bower_components)/,
+		loader: 'file-loader?name=img/[path][name].[ext]&context=./src/res'
 	}
 ];
