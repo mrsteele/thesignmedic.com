@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import ContactForm from '../ContactForm/index'
+import FontAwesome from 'react-fontawesome'
 import Modal from '../../utils/Modal'
 import Logo from '../../../res/logo.png'
 import Name from '../../../res/name.png'
@@ -51,10 +52,14 @@ export default class Navigation extends Component {
           </h1>
           <ul>
             <li>
-              <a tabIndex='0'>Link 1</a>
+              <a tabIndex='0' target='_blank' className='facebook'>
+                <FontAwesome name='facebook' />
+              </a>
             </li>
             <li>
-              <a tabIndex='0'>Link 2</a>
+              <a tabIndex='0' target='_blank' className='twitter'>
+                <FontAwesome name='twitter' />
+              </a>
             </li>
             <li>
               {this.getContactLink()}

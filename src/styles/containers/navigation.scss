@@ -36,14 +36,17 @@ nav.navigation {
         background: none;
         box-shadow: none;
         color: $brand-lightest;
+        transition: all 0.2s ease-out;
 
         &:hover, &:active, &:focus {
           box-shadow: none;
           background: none;
           text-decoration: underline;
+          text-shadow: 0px 0px 10px $brand-lightest;
 
           &.btn {
             text-decoration: none;
+            text-shadow: none;
           }
         }
       }
