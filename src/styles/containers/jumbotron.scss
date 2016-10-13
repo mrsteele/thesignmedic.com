@@ -1,5 +1,51 @@
 .jumbotron {
-  overflow: auto;
   background-color: $brand-primary;
   color: $brand-lightest;
+  padding: 20px;
+
+  .slick-slide {
+    position: relative;
+
+    img {
+      max-width: 100%;
+    }
+
+    .text {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transition: all 0.3s ease-out;
+      transition-delay: 1s;
+      opacity: 0;
+      padding: 20px;
+      margin-top: -20px;
+      text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+    }
+
+    &.slick-active .text {
+      opacity: 1;
+      margin-top: 0;
+    }
+
+    .title {
+      font-size: 2em;
+    }
+
+    .description {
+      top: 60px;
+      font-size: 1.5em;
+      max-width: 400px;
+      transition-delay: 1.25s;
+    }
+
+    @media #{$media-desktop} {
+      .title {
+        font-size: 3em;
+      }
+
+      .description {
+        font-size: 2em;
+      }
+    }
+  }
 }
