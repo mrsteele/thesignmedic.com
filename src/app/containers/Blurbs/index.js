@@ -4,29 +4,17 @@ import Blurb from './Blurb'
 export default class Blurbs extends Component {
   getBlurbs () {
     return [{
-      icon: 'print',
-      title: 'Print',
-      desc: 'Full Service Printing Capabilities'
-    }, {
-      icon: 'building',
-      title: 'Interior Signage',
-      desc: 'Banners, ADA Compliance, Wall Wraps, Stand-offs, P.O.P, Dimensional  Letters, Tradeshow Displays & More'
-    }, {
       icon: 'map-signs',
-      title: 'Exterior Signage',
-      desc: 'Banners, Yard Signs, Window Graphics, Monument Signage, Channel Letters, Dimensional Letters & More'
-    }, {
-      icon: 'object-ungroup',
-      title: 'Design',
-      desc: 'Graphic Design and Brand Development'
+      title: 'Signage Services',
+      desc: 'If you can imagine it we can make it happen. From banners, to Vehicle Lettering & Wraps, we can do it all!'
     }, {
       icon: 'angle-double-down',
-      title: 'Installation',
-      desc: 'Full Service Installation Capabilities'
+      title: 'Installation Services',
+      desc: 'Our experienced installation team is ready to install all of your signage needs.'
     }, {
-      icon: 'car',
-      title: 'Vehicle Wraps',
-      desc: 'Mobile Advertising Solution with a high ROI'
+      icon: 'object-ungroup',
+      title: 'Graphic Design Services',
+      desc: 'Our in house graphic designers are ready to exceed your expectations.'
     }]
   }
 
