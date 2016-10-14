@@ -52,12 +52,12 @@ export default class Navigation extends Component {
           </h1>
           <ul>
             <li>
-              <a tabIndex='0' target='_blank' className='facebook'>
+              <a href='https://www.facebook.com/TheSignMedic' tabIndex='0' target='_blank' className='facebook'>
                 <FontAwesome name='facebook' />
               </a>
             </li>
             <li>
-              <a tabIndex='0' target='_blank' className='twitter'>
+              <a href='https://twitter.com/SignMedicVa' tabIndex='0' target='_blank' className='twitter'>
                 <FontAwesome name='twitter' />
               </a>
             </li>

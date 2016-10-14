@@ -1,14 +1,15 @@
 nav.navigation {
   box-sizing: border-box;
   position: fixed;
-  background: $brand-darker;
-  color: $brand-lightest;
+  background: $brand-white;
+  color: $brand-darkest;
   width: 100%;
   text-align: center;
   padding: 10px;
   top: 0;
   left: 0;
   z-index: 10;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 
   h1 {
     margin: 0;
@@ -35,14 +36,14 @@ nav.navigation {
         cursor: pointer;
         background: none;
         box-shadow: none;
-        color: $brand-lightest;
+        color: $brand-darkest;
         transition: all 0.2s ease-out;
 
         &:hover, &:active, &:focus {
           box-shadow: none;
           background: none;
           text-decoration: underline;
-          text-shadow: 0px 0px 10px $brand-lightest;
+          text-shadow: 0px 0px 10px $brand-darkest;
 
           &.btn {
             text-decoration: none;

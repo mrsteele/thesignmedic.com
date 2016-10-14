@@ -4,45 +4,29 @@ import Blurb from './Blurb'
 export default class Blurbs extends Component {
   getBlurbs () {
     return [{
-      icon: 'coffee',
-      title: 'title',
-      desc: 'Here is a description of whatever.'
+      icon: 'print',
+      title: 'Print',
+      desc: 'Full Service Printing Capabilities'
     }, {
-      icon: 'chevron-right',
-      title: 'whatever',
-      desc: 'This is another thing.'
+      icon: 'building',
+      title: 'Interior Signage',
+      desc: 'Banners, ADA Compliance, Wall Wraps, Stand-offs, P.O.P, Dimensional  Letters, Tradeshow Displays & More'
     }, {
-      icon: 'facebook',
-      title: 'Super Cool',
-      desc: 'Here we go with another great thing.'
+      icon: 'map-signs',
+      title: 'Exterior Signage',
+      desc: 'Banners, Yard Signs, Window Graphics, Monument Signage, Channel Letters, Dimensional Letters & More'
     }, {
-      icon: 'chevron-left',
-      title: 'whatever',
-      desc: 'This is another thing.'
+      icon: 'object-ungroup',
+      title: 'Design',
+      desc: 'Graphic Design and Brand Development'
     }, {
-      icon: 'twitter',
-      title: 'Super Cool',
-      desc: 'Here we go with another great thing.'
+      icon: 'angle-double-down',
+      title: 'Installation',
+      desc: 'Full Service Installation Capabilities'
     }, {
-      icon: 'bullseye',
-      title: 'title',
-      desc: 'Here is a description of whatever.'
-    }, {
-      icon: 'pinterest',
-      title: 'Super Cool',
-      desc: 'Here we go with another great thing.'
-    }, {
-      icon: 'chevron-up',
-      title: 'whatever',
-      desc: 'This is another thing.'
-    }, {
-      icon: 'chevron-down',
-      title: 'whatever',
-      desc: 'This is another thing.'
-    }, {
-      icon: 'square',
-      title: 'title',
-      desc: 'Here is a description of whatever.'
+      icon: 'car',
+      title: 'Vehicle Wraps',
+      desc: 'Mobile Advertising Solution with a high ROI'
     }]
   }
 
@@ -54,7 +38,7 @@ export default class Blurbs extends Component {
     return (
       <section className='blurbs'>
         <div className='container'>
-          <h2 className='text-center'>... But wait, there's more!</h2>
+          <h2 className='text-center'>What We Do</h2>
           <ul>
             {children}
           </ul>

@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import Jumbotron from './containers/Jumbotron/index'
 import Navigation from './containers/Navigation/index'
 import Blurbs from './containers/Blurbs/index'
-import Badges from './containers/Badges/index'
+//import Badges from './containers/Badges/index'
+import About from './containers/About/index'
 import Footer from './containers/Footer/index'
 import Helmet from 'react-helmet'
 
@@ -50,7 +51,7 @@ export default class App extends Component {
         />
         <Navigation />
         <Jumbotron />
-        <Badges />
+        <About />
         <Blurbs />
         <Footer />
       </main>
