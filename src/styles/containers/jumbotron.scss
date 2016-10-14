@@ -53,6 +53,8 @@
   }
 
   .slick-next, .slick-prev {
+    width: 20px;
+    height: 20px;
     transition: all 0.2s ease-out;
 
     &:before {
