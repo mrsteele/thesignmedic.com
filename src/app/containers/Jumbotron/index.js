@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Slider from 'react-slick'
+import Modal from '../../utils/Modal'
 
 // slides
 import design from '../../../res/slides/design.jpg'
@@ -13,6 +14,8 @@ export default class Jumptron extends Component {
   constructor (props) {
     super(props)
 
+    this.toggleModal = this.toggleModal.bind(this)
+    this.state = {}
     setTimeout(() => {
       window.dispatchEvent(new window.Event('resize'))
     }, 500)
@@ -46,9 +49,15 @@ export default class Jumptron extends Component {
     }]
   }
 
+  toggleModal () {
+    this.setState({
+      showModal: !this.state.showModal
+    })
+  }
+
   render () {
     const Slides = this.getSlides().map(Slide => (
-      <div>
+      <div key={Slide.title}>
         <h2 className='title text'>{Slide.title}</h2>
         <p className='description text'>{Slide.desc}</p>
         <img src={Slide.img} />
@@ -57,7 +66,23 @@ export default class Jumptron extends Component {
 
     return (
       <section className='jumbotron'>
-        <div className='container text-right'>
+        <Modal showing={this.state.showModal} close={this.toggleModal}>
+          <h3 style={{margin: 0}}>Who we serve</h3>
+          <ul>
+            <li>Manassas</li>
+            <li>Springfield</li>
+            <li>Stafford</li>
+            <li>Dumfries</li>
+            <li>Fredericksburg</li>
+            <li>Lorton</li>
+            <li>Dale City</li>
+            <li>and anyone in the Metro DC area!</li>
+          </ul>
+        </Modal>
+        <div className='container text-center'>
+          <h2 className='subtitle'>
+            Serving <strong>Woodbridge, VA</strong> and the <a href='#' onClick={this.toggleModal}>surrounding area</a>
+          </h2>
           <Slider>
             {Slides}
           </Slider>

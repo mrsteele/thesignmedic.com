@@ -1,7 +1,26 @@
 .jumbotron {
   background-color: $brand-darkest;
   color: $brand-lightest;
-  padding: 20px;
+  padding: 40px 20px;
+
+  h2.subtitle {
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 20px;
+
+    a {
+      color: inherit;
+      display: inline-block;
+      text-decoration: none;
+      border-bottom: dashed 2px $brand-white;
+      cursor: pointer;
+      transition: all 0.2s ease-out;
+
+      &:hover {
+        border-bottom-color: transparent;
+      }
+    }
+  }
 
   .slick-slide {
     position: relative;

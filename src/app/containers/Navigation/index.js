@@ -45,11 +45,11 @@ export default class Navigation extends Component {
         <div className='container'>
           <h1>
             <img src={Logo} />
-            <img src={Name} />
-            <div className='only-mobile mobile-contact'>
-              {this.getContactLink()}
-            </div>
+            <img src={Name} alt='Sign Medic' />
           </h1>
+          <div className='only-mobile mobile-contact'>
+            {this.getContactLink()}
+          </div>
           <ul>
             <li>
               <a href='https://www.facebook.com/TheSignMedic' tabIndex='0' target='_blank' className='facebook'>
