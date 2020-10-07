@@ -1,4 +1,4 @@
-import React, { PropTypes, Component } from 'react'
+import React, { Component } from 'react'
 import FontAwesome from 'react-fontawesome'
 
 export default class Blurb extends Component {
@@ -15,12 +15,4 @@ export default class Blurb extends Component {
       </li>
     )
   }
-}
-
-Blurb.propTypes = {
-  data: PropTypes.shape({
-    icon: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    desc: PropTypes.string.isRequired
-  })
 }

@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import ContactForm from '../ContactForm/index'
 import FontAwesome from 'react-fontawesome'
 import Modal from '../../utils/Modal'
-import Logo from '../../../res/logo.png'
-import Name from '../../../res/name.png'
 
 export default class Navigation extends Component {
 
@@ -44,8 +42,8 @@ export default class Navigation extends Component {
         </Modal>
         <div className='container'>
           <h1>
-            <img src={Logo} />
-            <img src={Name} alt='Sign Medic' />
+            <img src='/logo.png' />
+            <img src='/name.png' alt='Sign Medic' />
           </h1>
           <div className='only-mobile mobile-contact'>
             {this.getContactLink()}

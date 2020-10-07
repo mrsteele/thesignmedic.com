@@ -2,20 +2,15 @@ import React, { Component } from 'react'
 import Slider from 'react-slick'
 import Modal from '../../utils/Modal'
 
-// slides
-import design from '../../../res/slides/design.jpg'
-import exteriorSignage from '../../../res/slides/exterior-signage.jpg'
-import installation from '../../../res/slides/installation.jpg'
-import interiorSignage from '../../../res/slides/interior-signage.jpg'
-import printing from '../../../res/slides/printing.jpg'
-import vehicleWraps from '../../../res/slides/vehicle-wraps.jpg'
-
 export default class Jumptron extends Component {
   constructor (props) {
     super(props)
 
     this.toggleModal = this.toggleModal.bind(this)
     this.state = {}
+  }
+
+  componentDidMount () {
     setTimeout(() => {
       window.dispatchEvent(new window.Event('resize'))
     }, 500)
@@ -23,27 +18,27 @@ export default class Jumptron extends Component {
 
   getSlides () {
     return [{
-      img: printing,
+      img: '/slides/printing.jpg',
       title: 'Print',
       desc: 'Full Service Printing Capabilities'
     }, {
-      img: interiorSignage,
+      img: '/slides/interior-signage.jpg',
       title: 'Interior Signage',
       desc: 'Banners | ADA Compliance | Wall Wraps | Stand-offs | P.O.P | Dimensional  Letters | Tradeshow Displays & More'
     }, {
-      img: exteriorSignage,
+      img: '/slides/exterior-signage.jpg',
       title: 'Exterior Signage',
       desc: 'Banners | Yard Signs | Window Graphics| Monument Signage | Channel Letters | Dimensional Letters & More'
     }, {
-      img: design,
+      img: '/slides/design.jpg',
       title: 'Design',
       desc: 'Graphic Design and Brand Development'
     }, {
-      img: installation,
+      img: '/slides/installation.jpg',
       title: 'Installation',
       desc: 'Full Service Installation Capabilities'
     }, {
-      img: vehicleWraps,
+      img: '/slides/vehicle-wraps.jpg',
       title: 'Vehicle Wraps',
       desc: 'Mobile Advertising Solution with a high ROI '
     }]

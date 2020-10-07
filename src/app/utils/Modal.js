@@ -1,4 +1,4 @@
-import React, { PropTypes, Component } from 'react'
+import React, { Component } from 'react'
 import FontAwesome from 'react-fontawesome'
 
 export default class Modal extends Component {
@@ -21,10 +21,4 @@ export default class Modal extends Component {
       </div>
     )
   }
-}
-
-Modal.propTypes = {
-  close: PropTypes.func.isRequired,
-  showing: PropTypes.bool,
-  children: PropTypes.node
 }

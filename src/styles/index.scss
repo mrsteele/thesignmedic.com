@@ -1,25 +1,22 @@
-:global {
+// libs
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css');
+@import '~normalize.css/normalize';
+@import '~react-dropdown/style';
 
-	// libs
-	@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css');
-	@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css');
-	@import '~normalize.css/normalize';
-	@import '~react-dropdown/style';
+// bases
+@import 'fonts';
+@import 'variables';
+@import 'bases/index';
+@import 'utils';
 
-	// bases
-	@import 'fonts';
-	@import 'variables';
-	@import 'bases/index';
-	@import 'utils';
+// sections
+@import 'containers/navigation';
+@import 'containers/jumbotron';
+@import 'containers/blurbs';
+@import 'containers/about';
+@import 'containers/badges';
+@import 'containers/footer';
 
-	// sections
-	@import 'containers/navigation';
-	@import 'containers/jumbotron';
-	@import 'containers/blurbs';
-	@import 'containers/about';
-	@import 'containers/badges';
-	@import 'containers/footer';
-
-	// utils
-	@import 'utils/modal';
-}
+// utils
+@import 'utils/modal';

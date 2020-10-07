@@ -1,4 +1,4 @@
-import React, { PropTypes, Component } from 'react'
+import React, { Component } from 'react'
 
 export default class Badge extends Component {
   render () {
@@ -15,12 +15,4 @@ export default class Badge extends Component {
       </li>
     )
   }
-}
-
-Badge.propTypes = {
-  data: PropTypes.shape({
-    icon: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    desc: PropTypes.string.isRequired
-  })
 }

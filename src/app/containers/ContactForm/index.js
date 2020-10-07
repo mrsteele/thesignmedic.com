@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component  } from 'react'
 import ReactDropdown from 'react-dropdown'
 
 export default class ContactForm extends Component {
@@ -97,8 +97,4 @@ export default class ContactForm extends Component {
       </form>
     )
   }
-}
-
-ContactForm.propTypes = {
-  onSubmit: PropTypes.func
 }
