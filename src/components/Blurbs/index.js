@@ -23,7 +23,7 @@ const Blurbs = () => (
       </h2>
       <div className='sm:grid sm:grid-cols-3'>
         {blurbs.map(blurb => {
-          return (<Blurb key={blurb.icon} {...blurb.data} />)
+          return (<Blurb key={blurb.icon} {...blurb} />)
         })}
       </div>
     </Container>
