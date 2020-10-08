@@ -1,6 +1,7 @@
-import React, { Component } from 'react'
+import { Component } from 'react'
 import Slider from 'react-slick'
-import Modal from '../../utils/Modal'
+import Modal from 'components/Modal'
+import Container from 'components/Container'
 
 export default class Jumptron extends Component {
   constructor (props) {
@@ -60,7 +61,7 @@ export default class Jumptron extends Component {
     ))
 
     return (
-      <section className='jumbotron'>
+      <section className='jumbotron bg-gray-900 text-gray-300 py-4 px-8'>
         <Modal showing={this.state.showModal} close={this.toggleModal}>
           <h3 style={{margin: 0}}>Who we serve</h3>
           <ul>
@@ -74,14 +75,14 @@ export default class Jumptron extends Component {
             <li>and anyone in the Metro DC area!</li>
           </ul>
         </Modal>
-        <div className='container text-center'>
-          <h2 className='subtitle'>
-            Serving <strong>Woodbridge, VA</strong> and the <a href='#' onClick={this.toggleModal}>surrounding area</a>
+        <Container>
+          <h2 className='text-2xl text-center pb-4'>
+            Serving <strong>Woodbridge, VA</strong> and the <a href='#' className='border-b-2 border-dashed' onClick={this.toggleModal}>surrounding area</a>
           </h2>
           <Slider>
             {Slides}
           </Slider>
-        </div>
+        </Container>
       </section>
     )
   }

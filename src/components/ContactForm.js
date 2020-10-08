@@ -1,4 +1,4 @@
-import React, { Component  } from 'react'
+import { Component  } from 'react'
 import ReactDropdown from 'react-dropdown'
 
 export default class ContactForm extends Component {
@@ -92,7 +92,7 @@ export default class ContactForm extends Component {
         </label>
 
         <p className='text-center'>
-          <button className='btn btn-success' onClick={this.submit}>Submit</button>
+          <button className='rounded px-2 py-1 bg-green-500 text-green-100 hover:bg-green-700 cursor-pointer transition duration-200' onClick={this.submit}>Submit</button>
         </p>
       </form>
     )

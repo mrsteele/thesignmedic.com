@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import '../styles/index.scss'
 import Head from 'next/head'
-
+import 'tailwindcss/tailwind.css'
 
 const MyApp = ({ Component, pageProps }) => {
   useEffect(() => {
@@ -31,9 +31,7 @@ const MyApp = ({ Component, pageProps }) => {
       {rel: 'apple-touch-icon', href: '/favicons/apple-icon-152x152.png', sizes: '152x152'},
       {rel: 'apple-touch-icon', href: '/favicons/apple-icon-180x180.png', sizes: '180x180'},
       {rel: 'icon', href: '/favicons/android-icon-192x192.png', type: 'img/png', sizes: '192x192'},
-      {rel: 'icon', href: '/favicons/android-icon-32x32.png', type: 'img/png', sizes: '32x32'},
       {rel: 'icon', href: '/favicons/android-icon-96x96.png', type: 'img/png', sizes: '96x96'},
-      {rel: 'icon', href: '/favicons/android-icon-16x16.png', type: 'img/png', sizes: '16x16'}
     ],
     meta: [
       {name: 'msapplication-TileColor', content: '#ffffff'},
@@ -79,7 +77,7 @@ const MyApp = ({ Component, pageProps }) => {
             <Tag {...tag} />
           )))}
           <script dangerouslySetInnerHTML={{
-            __html: process.env.NODE_ENV === 'production' && process.env.NETLIFY === 'true' && `
+            __html: process.env.NODE_ENV === 'production' && process.env.PRODUCTION === 'true' && `
     /*
       /*
       ** Include Google Analytics Script
@@ -91,7 +89,7 @@ const MyApp = ({ Component, pageProps }) => {
       /*
       ** Set the current page
       */
-      ga('create', '${process.env.GA_TRACKING_ID}', 'auto')
+      ga('create', 'UA-85609400-1', 'auto')
     `
           }}
           />
